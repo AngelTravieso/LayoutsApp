@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<!-- LinearLayout -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/linear1"
-    android:orientation="vertical" > <!--default orientation is horizontal-->
+    android:orientation="vertical" > &lt;!&ndash;default orientation is horizontal&ndash;&gt;-->
 
     <!--Inside of the layout we put the widgets-->
-    <TextView
+  <!--  <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Text 2"
@@ -24,9 +26,9 @@
         android:text="Hello! we are in Linear Layout"
         android:textSize="20dp" />
 
-    <!--Nested linearLayout-->
+    &lt;!&ndash;Nested linearLayout&ndash;&gt;
 
-    <!--preferr using dp for the padding and margin-->
+    &lt;!&ndash;preferr using dp for the padding and margin&ndash;&gt;
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,9 +58,57 @@
             android:layout_margin="4dp"
             android:text="Button3" />
 
-    </LinearLayout>
+    </LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+
+<!-- RelativeLayout -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/relative1" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="Text 1"
+        android:textSize="32dp" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me!"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn"
+        android:layout_below="@+id/text1" /> <!-- for the position relative to another widget with her id-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="button 2"
+        android:id="@+id/btn2"
+        android:layout_below="@+id/btn"
+        android:layout_centerHorizontal="true" />
 
 
 
 
-</LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
